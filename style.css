@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to left bottom, rgb(79, 166, 238),#d68989,rgb(202, 75, 196));
+    background-attachment: fixed;
+}
+
+.glass-container {
+    width: 70%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, .15);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.left{
+    width: 30%;
+}
+
+.left ul{
+    display: flex;
+    margin-left: 2rem;
+    justify-content: space-around;
+    font-family: Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #eaeaea;
+    font-weight: 500;
+}
+
+.right{
+    width: 15%;
+}
+
+.right ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+svg {
+    color: #eaeaea;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.left ul li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.left ul li.active {
+    background-color: #c44343;
+    border-radius: 20px;
+    transition: 0.3s ease-in all; 
+    
+}
+
+.main-container {
+    display: flex;
+    height: 90%;
+}
+
+.social {
+    width: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-left {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.050rem;
+    color: #d8d8d8;
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10rem;
+    margin-left: 2rem;
+}
+
+.text-left span, .text-right span {
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    color: #eaeaea;
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text-right {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.050rem;
+    color: #d8d8d8;
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10rem;
+    margin-right: 2rem;
+    width: 30%;
+}
+
+.image-center{
+    width: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+img{
+    width: 500px;
+    height: 50%;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+img:hover{
+    transform: scale(1.3);
+}
