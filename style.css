@@ -30,7 +30,7 @@
 }
 
 .left{
-    width: 30%;
+    width: 50%;
 }
 
 .left ul{
@@ -58,8 +58,12 @@ svg {
 }
 
 .left ul li {
-    padding: 5px 10px;
     cursor: pointer;
+    height: 100%;
+    padding: 0 10px;
+    text-align: center;
+    padding:  5px 15px;
+
 }
 
 .left ul li.active {
@@ -134,4 +138,121 @@ img{
 
 img:hover{
     transform: scale(1.3);
+}
+
+@media screen and (max-width: 1500px) {
+    img {
+        width: 450px;
+    }
+
+    .text-right span, .text-left span {
+        font-size: 42px;
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .social{
+        display: none;
+    }
+
+    img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .social{
+        display: none;
+    }
+
+    .text-right span, .text-left span{
+        font-size: 42px;
+    }
+
+    .left {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .social{
+        display: none;
+    }
+
+    .text-right span, .text-left span{
+        font-size: 42px;
+    }
+
+    .left {
+        width: 50%;
+    }
+} 
+
+@media screen and (max-width: 1200px) {
+    .item {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .text-right {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .image-center {
+        display: flex;
+        justify-content: center;
+    }
+    .left {
+        width: 400px;
+    }
+
+    .right {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .right {
+        display: none;
+    }
+
+    img {
+        width: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .left {
+        width: 100%;
+    }
+
+    .left ul{
+        width: 100%;
+        font-size: 8px;
+        display: flex;
+        margin-left: 0;
+    }
+
+    .text-left span, .text-right span{
+        font-size: 24px;
+    }
+
+    .left ul li{
+        padding: 0 10px;
+    }
+
+    .text-left, .text-right {
+        margin: 0;
+        text-align: center;
+    }
+
+    img {
+        width: 200px;
+    }
+
 }
